@@ -75,17 +75,17 @@
 							</a>
 						</li>
 						<li>
-							<a href="/reports">
+							<a href="/study_report">
 								<strong>Study Reports</strong><br>
 								<span>報告書・研究成果</span>
 							</a>
 						</li>
-						<li>
+<!-- 						<li>
 							<a href="/link">
 								<strong>Link</strong><br>
 								<span>リンク</span>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</nav>
 			</div>

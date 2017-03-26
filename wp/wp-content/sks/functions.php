@@ -79,9 +79,9 @@ function custom_post_type() {
 		'menu_position' => 5,
 		'supports' => $supports,
 		'has_archive' => true,
-		'paged' => true,
+		'paged' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+		'capability_type'     => 'post',
 		//'taxonomies' => array('study_report_type')
 	);
 	register_post_type('study_report', $args);
