@@ -1,0 +1,116 @@
+.home {
+	
+}
+
+.about-section {
+	&__title-container {
+		position: relative;
+		bottom: 2rem;
+		left: 0;
+		padding: inherit;
+	}
+	&__title {
+		margin-bottom: 0;
+		font-size: 4.889rem;
+		font-weight: 400;
+		line-height: 1.4;
+	}
+	&__desc {
+		margin: 0;
+	}
+	&__subdesc {
+		margin-top: 2.666rem;
+		font-size: 1.778rem;
+		font-style: italic;
+	}
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+	&-desc {
+		position: relative;
+		width: 43.111rem;
+	}
+}
+
+.greetings-signature {
+	font-size: 1.556rem;
+}
+
+.concept-area {
+	position: absolute;
+	width: 17.000rem;
+	height: 17.000rem;
+	padding: 2rem 2.667rem;
+	background-color: #fefe3b;
+	border-radius: 50%;
+	color: #000;
+	text-align: center;
+	&--first {
+		top: 1.778rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	&--second {
+		bottom: 1.778rem;
+		left: 0;
+	}
+	&--third {
+		bottom: 1.778rem;
+		right: 0;
+	}
+	&__number {
+		margin: 0;
+		color: #dede48;
+		font-size: 4.444rem;
+		font-weight: bold;
+		line-height: 1;
+	}
+}
+
+.business-content {
+	margin-bottom: 2.667rem;
+	&__title {
+		font-size: 1.556rem;
+		border-bottom: 0.33rem solid #000;
+	}
+	&__inner {
+		overflow: hidden;
+	}
+	.text-large {
+		font-size: 1.16rem;
+	}
+	figure {
+		float: right;
+		margin-left: 2.5rem;
+	}
+}
+
+.member-inner {
+	float: left;
+	width: 21.111rem;
+	&:first-child {
+		margin-right: 4.889rem;
+	}
+}
+.member-area {
+	margin-bottom: 2.667rem;
+	li {
+		margin-bottom: 0.5rem;
+	}
+	&__title {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 0.5rem;
+		font-size: 1.111rem;
+		font-weight: bold;
+		border-bottom: 0.2rem solid #000;
+	}
+	&__head {
+		display: inline-block;
+		width: 8.111rem;
+	}
+}

@@ -1,0 +1,136 @@
+<?php get_header(); ?>
+
+<main class="main main--home" id="main" role="main">
+  <article class="content content--home">
+    <section class="section section--main js-get-height">
+      <span class="circle circle--big js-circle"></span>
+      <div class="main-title-container">
+        <h1 class="main-title">経営青年会</h1>
+        <p class="main-subtitle">社会福祉法人経営青年会は、全国経営協の内部組織として、次代を担う50歳未満の若手法人経営者等の研鑽、リーダーとしての資質向上を目的に、平成7年12月11日に発足いたしました。</p>
+      </div>
+      <article class="main-article">
+        <div class="main-article__image">
+          <img src="/assets/images/articles/image1.jpg" alt="IMAGE">
+          <a href="/article" class="main-article__link"></a>
+        </div>
+        <p class="main-article__title">タイトルタイトル</p>
+        <p class="main-article__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキ</p>
+      </article>
+    </section>
+    <section class="section section--articles">
+      <h4 class="section-title u-colour--news">News<span class="head-subtitle">最新情報</span></h4>
+      <div class="article-list">
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="/article" class="article--item__link"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section section--articles">
+      <h4 class="section-title u-colour--report">Report<span class="head-subtitle">活動レポート</span></h4>
+      <div class="article-list">
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="/article/index2.html" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="/article/index2.html" class="article--item__link"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section section--articles">
+      <h4 class="section-title u-colour--workshop">Workshop<span class="head-subtitle">研修会</span></h4>
+      <div class="article-list">
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="/article/index2.html" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="/article/index2.html" class="article--item__link"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section section--articles">
+      <h4 class="section-title u-colour--sks-news">SKS News<span class="head-subtitle">青年会ニュース</span></h4>
+      <div class="article-list">
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">タイトルタイトル</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </article>
+  <section class="section section--anniversary js-get-height">
+    <div class="anniversary-inner">      
+      <p class="anniversary-title">20 years anniversary</p>
+      <div class="anniversary-detail">
+        <p class="anniversary-detail__title"><i class="icon icon--arrow"></i>20周年記念誌</p>
+        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが</p>
+      </div>
+      <div class="anniversary-image">
+        <img src="/assets/images/examples/example-anniversary.jpg" alt="EXAMPLE">
+      </div>
+      <a href="" class="anniversary-link button button--download"><i class="icon icon--download"></i>Download</a>
+    </div>
+  </section>
+</main>
+
+<?php get_footer(); ?>

@@ -1,0 +1,56 @@
+{% block pageid %}single{% endblock %}
+{% block title %}single{% endblock %}
+
+{% extends 'layout/_layout.nunjucks' %}
+
+{% block content %}
+<main class="main main--single" id="main" role="main">
+  <article class="content content--single">
+    <section class="section section--single">
+      <article class="article article--single">
+        <div class="article--single__image">
+          <img src="/assets/images/articles/image1.jpg" alt="IMAGE">
+        </div>
+        <div class="article--single__text">
+          <h6 class="article--single__title">記事の詳細タイトル</h6>
+          <p class="article--single__date">01/03/2017</p>
+          <div class="article--single__desc">
+            <p>Projekcje już w sobotę ! Poniżej podrzucamy Wam garśc niezbędnych informacji<br>古生代ペルム紀の終わりである2億5000万年前頃に、ローレンシア大陸、バルティカ大陸（ローレンシア・バルティカ両大陸は既にデボン紀には衝突し、ユーラメリカ大陸を形成していた）、ゴンドワナ大陸（ペルム紀初期にはユーラメリカと衝突）、シベリア大陸などすべての大陸が次々と衝突したことによって誕生し、中生代三畳紀の2億年前ごろから、再び分裂を始めた.パンゲア大陸は、赤道をはさんで三日月型に広がっていた。三日月内部の浅く広大な内海であるテチス海では多くの海洋生物が繁殖した。その一方、内陸部は海岸から遠いため乾燥した砂漠が荒涼と広がっていた。</p>
+          </div>
+          <div class="article--single__share">
+            <p class="share-title"><i class="icon icon--share"></i>Share<span class="share-subtitle">SNSでシェアする</span></p>
+            <ul>
+              <li><a class="button button--facebook" href=""></a></li>
+              <li><a class="button button--twitter" href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+  </article>
+  <article class="article article--others">
+    <ul class="clear">
+      <li class="article--others__prev">
+        <span class="article--others__text"><span class="rotated-text">Previous</span></span>
+        <div class="article--others__image">
+          <img src="/assets/images/articles/image2.jpg" alt="IMAGE">
+        </div>
+        <p class="article--others__title">記事タイトル</p>
+        <a class="article--others__link" href=""></a>
+      </li>
+      <li class="article--others__next">
+        <span class="article--others__text"><span class="rotated-text">Next</span></span>
+        <div class="article--others__image">
+          <img src="/assets/images/articles/image3.jpg" alt="IMAGE">
+        </div>
+        <p class="article--others__title">記事タイトル</p>
+        <a class="article--others__link" href=""></a>
+      </li>
+    </ul>
+  </article>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+{% endblock %}

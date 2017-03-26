@@ -1,0 +1,49 @@
+{% block pageid %}membership{% endblock %}
+{% block title %}membership{% endblock %}
+
+{% extends 'layout/_layout.nunjucks' %}
+
+{% block content %}
+<main class="main main--membership" id="main" role="main">
+  <article class="content content--membership">
+    <header class="content-header">
+      <div class="content-header__title-container">
+        <h2 class="content-header__title">Membership guide</h2>
+        <p class="content-header__desc">入会案内</p>
+      </div>
+    </header>
+    <section class="section section--membership">
+      <article class="article article--membership">
+        <h5>入会方法</h5>
+        <div class="article--membership__text">
+          <p>入会のお申込みは、申込書に必要事項をご記入のうえ、本会事務局までご郵送ください。 下記をクリック頂くと、申込書（PDFデータ）をダウンロード頂けます。<br>※都道府県組織（都道府県社会福祉法人経営青年会）が設立されている都道府県では、申込書の受付は都道府県事務局にて行っている場合がございます。入会希望のご連絡をいただいた際に、改めてご案内いたします。</p>
+        </div>
+      </article>
+      <article class="article article--membership">
+        <h5>会員資格</h5>
+        <div class="article--membership__text">
+          <p>社会福祉施設を経営する社会福祉法人に所属する満50歳未満の経営者・管理者等。</p>
+        </div>
+      </article>
+      <article class="article article--membership">
+        <h5>会　　費</h5>
+        <div class="article--membership__text">
+          <p>1人あたり年額1万円<br>※都道府県社会福祉法人経営青年会の会費については、各都道府県で異なります。申込みの際にご確認ください。</p>
+          <p>なお、本会への入会に際しては所属法人の理事長の推薦署名が必要であるため、メールでの入会受付はいたしかねます。</p>
+        </div>
+      </article>
+      <article class="article article--membership">
+        <h5>申込先</h5>
+        <div class="article--membership__text">
+          <p>全国社会福祉法人経営青年会　事務局</p>
+          <p>〒100-8980　東京都千代田区霞が関3-3-2　新霞が関ビル<br>全国社会福祉協議会　法人振興部内<br>Tel. 03-3581-7819　Fax. 03-3581-7928</p>
+        </div>
+      </article>
+    </section>
+  </article>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+{% endblock %}

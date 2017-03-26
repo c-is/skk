@@ -1,0 +1,234 @@
+{
+  "locations": [
+    {
+      "name": "London",
+      "group": 1,
+      "latitude": 51.5,
+      "longitude": -0.09,
+      "number": 86,
+      "pin": "standard",
+      "sublocation": [
+      	{
+      	  "name": "Glasgow",
+      	  "group": 1,
+      	  "latitude": 55.8553803,
+      	  "longitude": -4.3725487,
+      	  "number": 64,
+      	  "pin": "yellow"
+      	},
+      	{
+      	  "name": "Bristol",
+      	  "group": 1,
+      	  "latitude": 51.4684051,
+      	  "longitude": -2.7311367,
+      	  "number": 89,
+      	  "pin": "yellow"
+      	},
+      	{
+      	  "name": "St.Ives",
+      	  "group": 1,
+      	  "latitude": 50.2106461,
+      	  "longitude": -5.5054819,
+      	  "number": 23,
+      	  "pin": "standard"
+      	}
+      ]
+    },
+    {
+      "name": "Warszawa",
+      "group": 1,
+      "latitude": 52.196004,
+      "longitude": 21.0426287,
+      "number": 58,
+      "pin": "yellow",
+      "sublocation": [
+	      {
+	        "name": "Chełm",
+	        "group": 1,
+	        "latitude": 51.1355622,
+	        "longitude": 23.4194941,
+	        "number": 52,
+	        "pin": "standard"
+	      },
+	      {
+	        "name": "Krynica Morska",
+	        "group": 1,
+	        "latitude": 54.4044846,
+	        "longitude": 19.3498434,
+	        "number": 999,
+	        "pin": "standard"
+	      },
+	      {
+	        "name": "Białowieża",
+	        "group": 1,
+	        "latitude": 52.7015239,
+	        "longitude": 23.8241282,
+	        "number": 52,
+	        "pin": "standard"
+	      }
+      ]
+    },
+    {
+      "name": "Reykjavík",
+      "group": 1,
+      "latitude": 64.1322131,
+      "longitude": -21.992867,
+      "number": 8,
+      "pin": "red"
+    },
+    {
+      "name": "Cairo",
+      "group": 1,
+      "latitude": 30.058056,
+      "longitude": 31.228889,
+      "number": 102,
+      "pin": "grey"
+    },
+    {
+      "name": "Babylon",
+      "group": 1,
+      "latitude": 32.6547994,
+      "longitude": 43.9701004,
+      "number": 1002,
+      "pin": "yellow"
+    },
+    {
+      "name": "Novosibirsk",
+      "group": 1,
+      "latitude": 54.9696534,
+      "longitude": 82.6685372,
+      "number": 1,
+      "pin": "red"
+    },
+    {
+      "name": "Oymyakon",
+      "group": 1,
+      "latitude": 63.464138,
+      "longitude": 142.771533,
+      "number": 1,
+      "pin": "red"
+    },
+    {
+      "name": "Ulaanbaatar",
+      "group": 1,
+      "latitude": 47.8915645,
+      "longitude": 106.7614434,
+      "number": 19,
+      "pin": "standard"
+    },
+    {
+      "name": "Bangkok",
+      "group": 1,
+      "latitude": 13.7244418,
+      "longitude": 100.3522197,
+      "number": 120,
+      "pin": "red"
+    },
+    {
+      "name": "Shanghai",
+      "group": 1,
+      "latitude": 31.2231277,
+      "longitude": 120.9148913,
+      "number": 132,
+      "pin": "red"
+    },
+    {
+      "name": "Tokyo",
+      "group": 1,
+      "latitude": 35.5,
+      "longitude": 139.5,
+      "number": 88,
+      "pin": "standard",
+      "sublocation": [
+        {
+          "name": "Osaka",
+          "group": 1,
+          "latitude": 34.678395,
+          "longitude": 135.4601304,
+          "number": 50,
+          "pin": "grey"
+        },
+        {
+          "name": "Nagoya",
+          "group": 1,
+          "latitude": 35.1680298,
+          "longitude": 136.8415599,
+          "number": 33,
+          "pin": "standard"
+        },
+        {
+          "name": "Nagano",
+          "group": 1,
+          "latitude": 36.6478197,
+          "longitude": 137.8343459,
+          "number": 22,
+          "pin": "yellow"
+        }
+      ]
+    },
+    {
+      "name": "New York",
+      "group": 1,
+      "latitude": 144.058056,
+      "longitude": 100.228889,
+      "number": 10,
+      "pin": "standard"
+    },
+    {
+      "name": "NDjamena",
+      "group": 1,
+      "latitude": 12.1202094,
+      "longitude": 14.9872462,
+      "number": 19,
+      "pin": "yellow"
+    },
+    {
+      "name": "Saint-Denis",
+      "group": 1,
+      "latitude": -20.896695,
+      "longitude": 55.4174181,
+      "number": 19,
+      "pin": "standard"
+    },
+    {
+      "name": "Melbourne",
+      "group": 1,
+      "latitude": -37.8274812,
+      "longitude": 144.9351606,
+      "number": 15,
+      "pin": "yellow"
+    },
+    {
+      "name": "Ratoronga",
+      "group": 1,
+      "latitude": -21.2357396,
+      "longitude": -159.8128315,
+      "number": 2,
+      "pin": "yellow"
+    },
+    {
+      "name": "Bogotá",
+      "group": 1,
+      "latitude": 4.6482836,
+      "longitude": -74.2482395,
+      "number": 555,
+      "pin": "standard"
+    },
+    {
+      "name": "Rosario",
+      "group": 1,
+      "latitude": -40.6942121,
+      "longitude": -73.3455046,
+      "number": 555,
+      "pin": "standard"
+    },
+    {
+      "name": "Georgetown",
+      "group": 1,
+      "latitude": 6.7874715,
+      "longitude": -58.1864794,
+      "number": 4,
+      "pin": "grey"
+    }
+  ]
+}

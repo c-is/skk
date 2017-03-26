@@ -1,0 +1,287 @@
+{% block pageid %}about{% endblock %}
+{% block title %}about{% endblock %}
+
+{% extends 'layout/_layout.nunjucks' %}
+
+{% block content %}
+<main class="main main--about" id="main" role="main">
+  <article class="content content--about">
+    <header class="content-header">
+      <div class="content-header__title-container">
+        <h2 class="content-header__title">About us</h2>
+        <p class="content-header__desc">概要</p>
+      </div>
+    </header>
+    <section class="section section--about section--greetings">
+      <div class="u-inner about-section-inner">
+        <div class="about-section__title-container">
+          <h2 class="about-section__title">Greetings</h2>
+          <p class="about-section__desc">あいさつ</p>
+        </div>
+        <div class="about-section-desc">
+          <p>平成25年度より、会の名称が全国青年経営者会から全国社会福祉法人経営青年会に変わりました。本会は、次代を担う若者が社会福祉法人の経営を真剣に考え、研鑽していくことをめざしています。</p>
+          <p>いま、世の中において、社会福祉法人の非営利組織としての公共性が問われています。この状況に対して我々は、法人の経営情報公開を行い、地域の方と手を携えながら地域に必要な事業を推進し、かつ社会福祉の普遍的な価値観のもと主張すべきことはしっかりと主張していかなければなりません。そして、真に地域になくてはならない法人として、組織の中核を担う我々の世代が汗をかき、成長していくことが強く望まれています。本会は、その目的に達すべく、さまざまな研修を行っています。</p>
+          <p>本年度は、「Smile」「Speed」「Spirit」の３Sをスローガンに掲げて活動をしています。笑顔あふれる地域のため、社会福祉に対する熱い志を持った多くの皆さまのご参画を心よりお待ちしています。</p>
+          <p class="u-text-right greetings-signature">廣江　晃</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--about section--concept">
+      <div class="u-inner about-section-inner">
+        <div class="about-section__title-container">
+          <h2 class="about-section__title">Concept</h2>
+          <p class="about-section__desc">基本理念</p>
+          <p class="about-section__subdesc">“ともにめざす新たな福祉経営”</p>
+        </div>
+        <div class="about-section-desc">
+          <div class="concept-area concept-area--first">
+            <span class="concept-area__number">1</span>
+            <p class="concept-area__desc">全国社会福祉法人経営青年会は、福祉の担い手の育成と資質の向上に努めます。</p>
+          </div>
+          <div class="concept-area concept-area--second">
+            <span class="concept-area__number">2</span>
+            <p class="concept-area__desc">全国社会福祉法人経営青年会は、経営改革への取り組みをすすめ、豊かな福祉社会を追求します。</p>
+          </div>
+          <div class="concept-area concept-area--third">
+            <span class="concept-area__number">3</span>
+            <p class="concept-area__desc">全国社会福祉法人経営青年会は、地域福祉をともに考え、新たな社会貢献に取り組みます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--about section--business">
+      <div class="u-inner about-section-inner">
+        <div class="about-section__title-container">
+          <h2 class="about-section__title">Business</h2>
+          <p class="about-section__desc">事業内容</p>
+        </div>
+        <div class="about-section-desc about-section-desc--first">
+          <div class="business-content">
+            <p class="business-content__title">会員の資質向上、相互交流を目的として、各種研修会を開催しています。</p>
+            <div class="business-content__desc">
+              <p>社会福祉法人の経営に求められる知識と実践的能力の習得の場として、社会福祉法人制度を取り巻く情勢や経営の実践的な内容の研修を実施しています。</p>
+              <div class="business-content__inner">
+                <figure>
+                  <img src="/assets/images/about/image-business1.jpg" alt="IMAGE">
+                </figure>
+                <p class="text-large">【(参考}平成25年度の実施研修会一覧】</p>
+                <ol>
+                  <li>第17回 社会福祉法人経営青年会全国大会</li>
+                  <li>全国社会福祉法人経営青年会 基礎講座</li>
+                  <li>全国社会福祉法人経営青年会 専門講座（全2回）</li>
+                  <li>コーチングトレーニング講座</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-section-desc about-section-desc--second">
+          <div class="business-content">
+            <p class="business-content__title">最新の情報と専門知識の提供と、<br>会員相互の情報交換に取り組んでいます。</p>
+            <div class="business-content__desc">
+              <div class="business-content__inner">
+                <figure>
+                  <img src="/assets/images/about/image-business2.jpg" alt="IMAGE">
+                </figure>
+                <p>会員の知識習得、資質向上を目的とした各種情報提供を実施しています。</p> 
+                <p>会報「全国社会福祉法人経営青年会ニュース（News）」、メールニュース、Webサイトにて、本会の活動状況・内容・成果を随時発信しています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-section-desc about-section-desc--third">
+          <div class="business-content">
+            <p class="business-content__title">社会福祉法人、福祉施設に関する諸制度や経営課題について研究・提言活動を実施しています。</p>
+            <div class="business-content__desc">
+              <p>社会福祉法人のあるべき姿を考え、直面する経営課題への対応策を検討するため、2つの委員会を設け、研究・提言活動を進めています。委員会には、会員の方であればどなたでもご参加いただけます。</p>
+              <div class="business-content__inner">
+                <figure>
+                  <img src="/assets/images/about/image-business3.jpg" alt="IMAGE">
+                  <figcaption>「事業継続マネジメントの実践」<br>（災害対策委員会　成果物）</figcaption>
+                </figure>
+                <p class="text-large">【(参考)平成25～26年度実施の委員会】</p>
+                <ol>
+                  <li>社会福祉法人経営検討委員会<br>介護・保育・障害ワーキングチーム<br>情報発信推進プロジェクトチーム</li>
+                  <li>地域活動推進委員会<br>生活困窮者支援プロジェクトチーム</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-section-desc about-section-desc--fourth">
+          <div class="business-content">
+            <p class="business-content__title">全国社会福祉法人経営者協議会<br>（全国経営協）の事業と連携を密にしています。</p>
+            <div class="business-content__desc">
+              <p>全国経営協が設置する「制度・政策委員会」、「介護保険事業経営委員会」、「保育所経営委員会」、「障害者施設経営委員会」に、本会からの選出委員が参画し、全国経営協事業の推進に寄与しております。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--about section--member">
+      <div class="u-inner about-section-inner">
+        <div class="about-section__title-container">
+          <h2 class="about-section__title">Member</h2>
+          <p class="about-section__desc">組織紹介</p>
+          <figure>
+            <img src="/assets/images/about/image-member.jpg" alt="IMAGE">
+            <figcaption>全国社会福祉法人経営青年会　組織図</figcaption>
+          </figure>
+        </div>
+        <div class="about-section-desc clear">
+          <div class="member-inner">
+            <div class="member-area">
+              <span class="member-area__title">会長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">廣江　晃</span>
+                  <span class="member-area__desc">鳥取県／こうほうえん</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">副会長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">大代　貴輝</span>
+                  <span class="member-area__desc">北海道／黒松内つくし園</span>
+                </li>
+                <li>
+                  <span class="member-area__head">菊池　俊則</span>
+                  <span class="member-area__desc">岩手県／若竹会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">村井　慶二</span>
+                  <span class="member-area__desc">大阪府／ふじ福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">塘林　敬規</span>
+                  <span class="member-area__desc">熊本県／肥後自活団</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">総務広報部会長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">大森　秀之</span>
+                  <span class="member-area__desc">大阪府／治栄会</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">研修企画部会長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">杉山　弘年</span>
+                  <span class="member-area__desc">静岡県／蒼樹会</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">社会福祉法人経営検討委員会</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">神田　　 学</span>
+                  <span class="member-area__desc">（再掲）</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">地域活動実践委員会</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">梅野　高明</span>
+                  <span class="member-area__desc">（再掲）</span>
+                </li>
+              </ul>  
+            </div>
+          </div>
+          <div class="member-inner">
+            <div class="member-area">
+              <span class="member-area__title">幹事</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">村木　宏成</span>
+                  <span class="member-area__desc">秋田県／愛生会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">杉山　弘年</span>
+                  <span class="member-area__desc">（再掲）</span>
+                </li>
+                <li>
+                  <span class="member-area__head">菊地　月香</span>
+                  <span class="member-area__desc">栃木県／同愛会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">神田　　学</span>
+                  <span class="member-area__desc">富山県／梨雲福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">梅野　高明</span>
+                  <span class="member-area__desc">兵庫県／勝原福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">堤　　 洋三</span>
+                  <span class="member-area__desc">滋賀県／六心会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">手束　直胤</span>
+                  <span class="member-area__desc">徳島県／有誠福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">田川　伸隆</span>
+                  <span class="member-area__desc">長崎県／高来福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">大﨑　雅子</span>
+                  <span class="member-area__desc">富山県／海望福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">大森　秀之</span>
+                  <span class="member-area__desc">（再掲）</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">監事</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">-</span>
+                  <span class="member-area__desc">（東海・北陸ブロックより選出）</span>
+                </li>
+                <li>
+                  <span class="member-area__head">-</span>
+                  <span class="member-area__desc">（九州ブロックより選出）</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">顧問</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">-</span>
+                  <span class="member-area__desc">（調整中）</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">相談役</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">-</span>
+                  <span class="member-area__desc">（調整中）</span>
+                </li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+{% endblock %}

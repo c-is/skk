@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "cloud",
+      "name": "“CA114000002520025【JCA-BM8040 ⾃動分析装置】(9009200_⽇本⾚⼗字社⼤阪⾚⼗字病院)",
+      "category": "TEM",
+      "detail": "aaa"
+    },
+    {
+      "id": 2,
+      "slug": "network",
+      "name": "EM010000-0613【UC6型ミクロトームシステム】(9009200_⽇本⾚⼗字社⼤阪⾚⼗字病院)",
+      "category": "SEM"
+    },
+    {
+      "id": 3,
+      "slug": "network",
+      "name": "SM10100001480148【JSM-7100F型⾛査電⼦顕微鏡】(1011602_国⽴⼤学法⼈東京⼤学⼤学院理学系研究科・理学部)",
+      "category": "IS/CP"
+    },
+    {
+      "id": 4,
+      "slug": "network",
+      "name": "CA1271002810281【JCA-BM6070 ⾃動分析装置】(9013202_⽇本⾚⼗字社医療センター)",
+      "category": "EPMA"
+    },
+    {
+      "id": 5,
+      "slug": "network",
+      "name": "CA113044-0044【JCA-BM6050 ⾃動分析装置】(9013202_⽇本⾚⼗字社医療センター)",
+      "category": "Auger"
+    },
+    {
+      "id": 6,
+      "slug": "network",
+      "name": "CA113044-0044【JCA-BM6050 ⾃動分析装置】(9013202_⽇本⾚⼗字社医療センター)",
+      "category": "XPS/ESCA",
+      "detail": "aaa"
+    }
+  ]
+}

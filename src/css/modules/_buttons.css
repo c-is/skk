@@ -1,0 +1,87 @@
+.button {
+	display: inline-block;
+	&--download {
+		width: 17.556rem;
+		height: 4.444rem;
+		background-color: $sub-colour2;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: bold;
+		line-height: 2.8;
+		border-bottom: 0.5rem solid #dbdb2e;
+		&:hover {
+			background-color: $sub-colour;
+			border-bottom-color: #1b1ba9;
+			color: #fff;
+		}
+	}
+	&--facebook {
+		width: 7.778rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/button-facebook.png);
+		background-size: contain;
+	}
+	&--twitter {
+		width: 7.778rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/button-twitter.png);
+		background-size: contain;
+	}
+}
+
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	&--email {
+		width: 2.222rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/icon-mail.svg);
+	}
+	&--guide {
+		width: 2.222rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/icon-guide.svg);
+	}
+	&--privacy {
+		width: 2.000rem;
+		height: 1.8rem;
+		margin-right: 0.925rem;
+		background-image: url(/assets/images/common/icon-privacy.svg);
+		vertical-align: text-bottom;
+	}
+	&--sitemap {
+		width: 2.000rem;
+		height: 1.8rem;
+		margin-right: 0.925rem;
+		background-image: url(/assets/images/common/icon-sitemap.svg);
+		vertical-align: text-bottom;
+	}
+	&--pdf {
+		width: 1.667rem;
+		height: 2.111rem;
+		margin: 0 0.925rem;
+		margin-left: 3.333rem;
+		background-image: url(/assets/images/common/icon-pdf.png);
+		background-size: contain;
+		vertical-align: -0.375rem;
+	}
+	&--share {
+		width: 1.333rem;
+		height: 1.611rem;
+		margin-right: 1rem;
+		background-image: url(/assets/images/common/icon-share.png);
+		background-size: contain;
+		vertical-align: -0.125rem;
+	}
+	&--facebook {
+		width: 2.222rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/icon-facebook.svg);
+	}
+	&--twitter {
+		width: 2.222rem;
+		height: 2.222rem;
+		background-image: url(/assets/images/common/icon-twitter.svg);
+	}
+}

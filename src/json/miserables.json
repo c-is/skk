@@ -1,0 +1,116 @@
+{
+  "nodes":  [
+    { 
+		"name": "BM8040基本体",
+		"group":  1,
+		"colour": "#eaea86",
+		"category": "",
+		"code": "84300674901",
+		"model": "CA11400"
+    },
+    { 
+		"name": "スリープインターフェイス",
+		"group":  1,
+		"colour": "#eaea86",
+		"category": "",
+		"code": "84300229803",
+		"model": "CA35470"
+	},
+    { 
+		"name": "オペレーションコンソール",
+		"group":  1,
+		"colour": "#eaea86",
+		"category": "",
+		"code": "84300248402",
+		"model": "CA35690"
+	},
+    { 
+		"name": "USBプリンタ",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84301272200",
+		"model": "CA35880"
+	},
+    { 
+		"name": "BM8040基本体",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300674901",
+		"model": "CA11400"
+	},
+    { 
+		"name": "スリープインターフェイス",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300229803",
+		"model": "CA35470"
+	},
+	{ 
+		"name": "オペレーションコンソール",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300248402",
+		"model": "CA35690"
+	},
+	{ 
+		"name": "USBプリンタ",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84301272200",
+		"model": "CA35880"
+	},
+	{ 
+		"name": "スリープインターフェイス",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300229803",
+		"model": "CA35470"
+	},
+	{ 
+		"name": "BM8040基本体",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300674901",
+		"model": "CA11400"
+	},
+	{ 
+		"name": "スリープインターフェイス",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300229803",
+		"model": "CA35470"
+	},
+    { 
+		"name": "スリープインターフェイス",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300229803",
+		"model": "CA35470"
+	},
+	{ 
+		"name": "オペレーションコンソール",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84300248402",
+		"model": "CA35690"
+	},
+	{ 
+		"name": "USBプリンタ",
+		"group":  1,
+		"colour": "#15e0f9",
+		"category": "",
+		"code": "84301272200",
+		"model": "CA35880"
+	}
+  ]
+}

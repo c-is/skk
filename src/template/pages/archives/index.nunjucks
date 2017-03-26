@@ -1,0 +1,83 @@
+{% block pageid %}archives{% endblock %}
+{% block title %}archives{% endblock %}
+
+{% extends 'layout/_layout.nunjucks' %}
+
+{% block content %}
+<main class="main main--archives" id="main" role="main">
+  <article class="content content--archives">
+    <header class="content-header">
+      <div class="content-header__title-container">
+        <h2 class="content-header__title">Archives</h2>
+        <p class="content-header__desc">全般のアーカイブ情報です</p>
+      </div>
+    </header>
+    <section class="section section--articles">
+      <div class="article-nav">
+        <div class="article-nav__filter">
+          <ul>
+            <li><span class="active">2017</span></li>
+            <li><span>2016</span></li>
+            <li><span>2015</span></li>
+          </ul>
+        </div>
+        <form class="article-nav__category">
+          <select>
+            <option>カテゴリーを選択</option>
+          </select>
+        </form>
+      </div>
+      <div class="article-list article-list--archives">
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+            <span class="article--item__tag article-tag article-tag--news">最新ニュース</span>
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+            <span class="article--item__tag article-tag article-tag--workshop">研修会</span>
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+            <span class="article--item__tag article-tag article-tag--report">活動レポート</span>
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+        <article class="article article--item">
+          <div class="article--item__image">
+            <img src="">
+            <span class="article--item__tag article-tag article-tag--sks-news">青年会ニュース</span>
+          </div>
+          <div class="article--item__text">
+            <p class="article--item__title">ホームページをリニューアルしました。</p>
+            <p class="article--item__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入り...</p>
+            <a href="" class="article--item__link"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </article>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+{% endblock %}
