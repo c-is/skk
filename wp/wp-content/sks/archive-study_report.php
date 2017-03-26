@@ -27,7 +27,8 @@
 	    $id = get_the_ID();
 	    $slug = $post->slug;
 	    $pdf = get_field('pdf');
-	    $filesize = filesize( get_attached_file( $pdf ) );
+	    $f = filesize( get_attached_file( $pdf ));
+	    $filesize = size_format( $f, 2 );
 	    $url = wp_get_attachment_url( $pdf );
 	    ?>
           <li><a href="<?php echo $url; ?>" target="_blank"><?php the_title(); ?><i class="icon icon--pdf"></i><span class="article--report__size"><?php echo $filesize; ?></span></a></li>
