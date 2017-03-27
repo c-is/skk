@@ -1,0 +1,51 @@
+{% block pageid %}sitemap{% endblock %}
+{% block title %}sitemap{% endblock %}
+
+{% extends 'layout/_layout.nunjucks' %}
+
+{% block content %}
+<main class="main main--sitemap" id="main" role="main">
+  <article class="content content--sitemap">
+    <header class="content-header">
+      <div class="content-header__title-container">
+        <h2 class="content-header__title">Sitemap</h2>
+        <p class="content-header__desc">サイトマップ</p>
+      </div>
+    </header>
+    <section class="section section--sitemap">
+      <ul class="main-directory clear">
+        <li>
+          <h5><a href="/">Home</a></h5>
+        </li>
+        <li>
+          <h5><a href="/about">概要</a></h5>
+        </li>
+        <li>
+          <h5><a href="/archives">アーカイブ</a></h5>
+          <ul class="main-directory__children">
+            <li><a href="/news">NEWS</a></li>
+            <li><a href="/report">活動レポート</a></li>
+            <li><a href="/workshop">研修会</a></li>
+            <li><a href="/seinenkai-news">青年会ニュース</a></li>
+          </ul>
+        </li>
+        <li>
+          <h5><a href="/study_report">報告書・研究成果</a></h5>
+        </li>
+      </ul>
+      <ul class="sub-directory clear">
+        <li>
+          <h5><a href="/membership">入会案内</a></h5>
+        </li>
+        <li>
+          <h5><a href="/privacy">プライバシーポリシー</a></h5>
+        </li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+{% endblock %}
+
+{% block scripts %} 
+{% endblock %}

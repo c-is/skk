@@ -13,6 +13,9 @@
 			background-color: $sub-colour;
 			border-bottom-color: #1b1ba9;
 			color: #fff;
+			.icon--download {
+				background-image: url(/assets/images/common/icon-download_white.svg);
+			}
 		}
 	}
 	&--facebook {
@@ -78,10 +81,28 @@
 		width: 2.222rem;
 		height: 2.222rem;
 		background-image: url(/assets/images/common/icon-facebook.svg);
+		background-size: contain;
 	}
 	&--twitter {
 		width: 2.222rem;
 		height: 2.222rem;
 		background-image: url(/assets/images/common/icon-twitter.svg);
+		background-size: contain;
+	}
+	&--download {
+		width: 1.667rem;
+		height: 1.500rem;
+		margin-right: 1rem;
+		background-image: url(/assets/images/common/icon-download.svg);
+		background-size: contain;
+		vertical-align: sub;
+	}
+	&--arrow {
+		width: 1rem;
+		height: 1.389rem;
+		background-image: url(/assets/images/common/arrow-right.svg);
+		background-size: contain;
+		margin-right: 1rem;
+		vertical-align: inherit;
 	}
 }

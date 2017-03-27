@@ -22,9 +22,9 @@ get_header(); ?>
     );
     ?>
       <div class="article-nav">
-        <div class="article-nav__filter js-filter">
+        <div class="article-nav__filter js-filter" data-filter-group="year">
           <ul class="clear">
-            <li><span class="js-filter-trigger active" data-filter="*">ALL</span></li>
+            <li><span class="js-filter-trigger active" data-filter="">ALL</span></li>
             <?php 
             $years = $wpdb->get_results( "SELECT YEAR(post_date) AS year FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' GROUP BY year DESC" );
 
@@ -37,9 +37,9 @@ get_header(); ?>
             ?>
           </ul>
         </div>
-        <form class="article-nav__category js-filter">
+        <form class="article-nav__category js-filter" data-filter-group="category">
           <select class="js-filter-select">
-            <option value="*">カテゴリーを選択</option>
+            <option value="">カテゴリーを選択</option>
             <?php 
             $cate_args = array(
             'hide_empty'=> 1,
@@ -72,7 +72,7 @@ get_header(); ?>
               # code...
               echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
             } else {
-              echo '<img src="" alt="NO IMAGE">';
+              echo '<img src="/assets/images/common/no-image.jpg" alt="NO IMAGE">';
             } ?>
             <span class="article--item__tag article-tag article-tag--<?php echo $post_categories[0]->slug ?>"><?php echo $post_categories[0]->name ?></span>
           </div>

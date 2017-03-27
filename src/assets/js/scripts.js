@@ -84,17 +84,30 @@ function tabs() {
 }
 
 function filterItems() {
-	let archive = document.querySelector('.article-list--archives');
+	//let archive = document.querySelector('.article-list--archives');
+	let initCategory = window.location.pathname.replace(/\//g, '');
+	let initVal = (initCategory && initCategory !== 'archives' ) ? `.category-${initCategory}` : '';
 	let iso = new Isotope( '.article-list--archives', {
 		itemSelector: '.article--item',
-		layoutMode: 'fitRows'
-	})
+		layoutMode: 'fitRows',
+		filter: initVal
+	});
+	let filters = {};
+
+	if(initVal) { 
+		$('.js-filter-select').val(initVal);
+		filters['category'] = initVal;
+	}
+
 	$('.js-filter').on( 'click', '.js-filter-trigger', (event) => {
 		event.preventDefault();
+		
+		let value = $(event.currentTarget).attr('data-filter');
+		let filterValue = filtersSave(event.currentTarget, value);
+		
 		$('.js-filter-trigger').removeClass('active');
 		$(event.currentTarget).addClass('active');
 
-		let filterValue = $(event.currentTarget).attr('data-filter');
 		iso.arrange({
 			// item element provided as argument
 			filter: filterValue,
@@ -102,10 +115,28 @@ function filterItems() {
 	});
 	$('.js-filter').on( 'change', '.js-filter-select', (event) => {
 		event.preventDefault();
-		let filterValue = $(event.currentTarget).val();
+		
+		let value = $(event.currentTarget).val();
+		let filterValue = filtersSave(event.currentTarget, value);
+		
 		iso.arrange({
 			// item element provided as argument
 			filter: filterValue,
 		});
 	});
+
+	function filtersSave(el, val) {
+		let filterGroup = $(el).parents('.js-filter').attr('data-filter-group');
+		filters[filterGroup] = val;
+		let filterValue = concatValues(filters);
+
+		return filterValue;
+	}
+	function concatValues( obj ) {
+		let value = '';
+		for ( let prop in obj ) {
+			value += obj[ prop ];
+		}
+		return value;
+	}
 }

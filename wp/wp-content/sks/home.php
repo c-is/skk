@@ -31,7 +31,7 @@
       </article>
     </section>
     <section class="section section--articles">
-      <h4 class="section-title u-colour--news">News<span class="head-subtitle">最新情報</span></h4>
+      <h4 class="section-title u-colour--news">Latest update<span class="head-subtitle">最新情報</span></h4>
       <div class="article-list">
 		<?php 
 	      $args = array(
@@ -44,13 +44,16 @@
           );
           $news = get_posts($args);
       foreach((array)$news as $post): setup_postdata($post);
+      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
     ?>
         <article class="article article--item">
           <div class="article--item__image">
-			<?php if(has_post_thumbnail()): the_post_thumbnail(); ?>
-			<?php else: ?>
-	            <img src="">
-			<?php endif; ?>
+            <?php if ($thumb) {
+              # code...
+              echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
+            } else {
+              echo '<img src="/assets/images/common/no-image.jpg" alt="NO IMAGE">';
+            } ?>
           </div>
           <div class="article--item__text">
             <p class="article--item__title"><?php the_title(); ?></p>
@@ -83,7 +86,7 @@
               # code...
               echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
             } else {
-              echo '<img src="" alt="NO IMAGE">';
+              echo '<img src="/assets/images/common/no-image.jpg" alt="NO IMAGE">';
             } ?>
           </div>
           <div class="article--item__text">
@@ -117,7 +120,7 @@
               # code...
               echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
             } else {
-              echo '<img src="" alt="NO IMAGE">';
+              echo '<img src="/assets/images/common/no-image.jpg" alt="NO IMAGE">';
             } ?>
           </div>
           <div class="article--item__text">
@@ -130,7 +133,7 @@
       </div>
     </section>
     <section class="section section--articles">
-      <h4 class="section-title u-colour--sks-news">SKS News<span class="head-subtitle">青年会ニュース</span></h4>
+      <h4 class="section-title u-colour--sks-news">Seinenkai News<span class="head-subtitle">青年会ニュース</span></h4>
       <div class="article-list">
 		<?php
 		  $args = array(
@@ -151,7 +154,7 @@
               # code...
               echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
             } else {
-              echo '<img src="" alt="NO IMAGE">';
+              echo '<img src="/assets/images/common/no-image.jpg" alt="NO IMAGE">';
             } ?>
           </div>
           <div class="article--item__text">

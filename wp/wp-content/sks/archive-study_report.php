@@ -10,31 +10,43 @@
     </header>
     <section class="section section--reports">
 
-      <article class="article article--report">
-        <h5 class="article--report__head">平成25・26年度</h5>
-        <ul>
-	    <?php 
-	    $q = new WP_Query(
-	      array(
-	      	'post_type' => 'study_report',
-	        'posts_per_page' => -1
-	      )
-	    );
-	    if ($q->have_posts()) : while ($q->have_posts()) : $q->the_post(); 
-	    ?>
+    <?php 
+    $years = array();
+    $q = new WP_Query(
+      array(
+      	'post_type' => 'study_report',
+        'posts_per_page' => -1
+      )
+    );
+    if ($q->have_posts()) : while ($q->have_posts()) : $q->the_post(); 
 
-	    <?php 
-	    $id = get_the_ID();
-	    $slug = $post->slug;
-	    $pdf = get_field('pdf');
-	    $f = filesize( get_attached_file( $pdf ));
-	    $filesize = size_format( $f, 2 );
-	    $url = wp_get_attachment_url( $pdf );
-	    ?>
-          <li><a href="<?php echo $url; ?>" target="_blank"><?php the_title(); ?><i class="icon icon--pdf"></i><span class="article--report__size"><?php echo $filesize; ?></span></a></li>
-    	<?php endwhile; wp_reset_postdata(); endif; ?>
+    $year = get_the_date( 'Y' );
+    if ( ! isset( $years[ $year ] ) ) $years[ $year ] = array();
+    $years[ $year ][] = array( 
+    	'id' => get_the_ID(),
+    	'slug' => $post->slug,
+    	'title' => get_the_title(), 
+    );
+
+    endwhile; wp_reset_postdata(); endif;
+    ?>
+	<?php foreach($years as $key => $year): ?>
+      <article class="article article--report">
+        <h5 class="article--report__head"><?php echo $key; ?>年</h5>
+        <ul>
+		<?php 
+		foreach($year as $report_post):
+
+		$pdf = get_field('pdf', $report_post['id']);
+		$f = filesize( get_attached_file( $pdf ));
+		$filesize = size_format( $f, 2 );
+		$url = wp_get_attachment_url( $pdf );
+		?>
+	      	<li><a href="<?php echo $url; ?>" target="_blank"><?php echo $report_post['title']; ?><i class="icon icon--pdf"></i><span class="article--report__size"><?php echo $filesize; ?></span></a></li>
+	    <?php endforeach; ?>
         </ul>
       </article>
+   	<?php endforeach; ?>
 
     </section>
   </article>

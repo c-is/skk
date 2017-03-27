@@ -127,6 +127,20 @@
 		p {
 			margin-top: 0;
 		}
+		&.is-row {
+			display: block;
+			.article--single__image {
+				width: 100%;
+				margin-bottom: 5rem;
+				img {
+					max-width: 100%;
+					width: auto;
+				}
+			}
+			.article--single__text {
+				width: 100%;
+			}
+		}
 		&__image {
 			width: 36.667rem;
 			img {
@@ -135,6 +149,9 @@
 		}
 		&__text {
 			width: 37.500rem;
+			&.is-long {
+				width: 100%;
+			}
 		}
 		&__title {
 			margin: 0;
@@ -175,6 +192,11 @@
 		ul {
 			width: 100%;
 			height: 100%;
+			&.is-long {
+				li {
+					width: 100%;
+				}
+			}
 		}
 		&__prev, &__next {
 			position: relative;
@@ -221,6 +243,8 @@
 		&__image {
 			width: 100%;
 			height: 100%;
+			background-size: cover;
+			background-position: center;
 			img {
 				height: 100%;
 			}
@@ -317,7 +341,56 @@
 	&--workshop {
 		background-color: $workshop-colour;
 	}
-	&--sks-news {
+	&--seinenkai-news {
 		background-color: $sks-news-colour;
+	}
+}
+
+.article--single__desc {
+	font-size: 1.125rem;
+	h3 {
+		margin: 1em 0;
+		font-size: 1.625rem;
+	}
+	h4 {
+		margin: 1em 0;
+		font-size: 1.333rem;
+	}
+	table {
+		max-width: 100%;
+		border: 1px solid;
+	}
+	td {
+		padding: 1rem;
+		border-bottom: 1px solid;
+		border-right: 1px solid;
+	}
+	p {
+		overflow: hidden;
+	}
+	ul {
+		margin-left: 1.8rem;
+		margin-bottom: 1em;
+		list-style: disc;
+	}
+	li {
+		margin-top: 0.5rem;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.alignright {
+		float: right;
+		margin-left: 1rem;
+	}
+	.alignleft {
+		float: left;
+		margin-right: 1rem;
 	}
 }
