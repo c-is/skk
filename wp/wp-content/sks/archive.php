@@ -31,6 +31,18 @@ get_header(); ?>
         <form class="article-nav__category">
           <select>
             <option>カテゴリーを選択</option>
+            <?php 
+            $cate_args = array(
+            'hide_empty'=> 1,
+            'orderby' => 'name',
+            'order' => 'ASC'
+            );
+
+            $categories = get_categories($cate_args);
+            foreach($categories as $category) {
+              echo '<option id="option-'. $category->slug .'">'. $category->name .'</option>';
+            };
+            ?>
           </select>
         </form>
       </div>
@@ -41,12 +53,12 @@ get_header(); ?>
       $id = get_the_ID();
       $slug = $post->slug;
 
-      $categories = get_the_category();
+      $post_categories = get_the_category();
       ?>
         <article class="article article--item">
           <div class="article--item__image">
             <img src="">
-            <span class="article--item__tag article-tag article-tag--<?php echo $categories[0]->slug ?>"><?php echo $categories[0]->name ?></span>
+            <span class="article--item__tag article-tag article-tag--<?php echo $post_categories[0]->slug ?>"><?php echo $post_categories[0]->name ?></span>
           </div>
           <div class="article--item__text">
             <p class="article--item__title"><?php the_title(); ?></p>
@@ -54,7 +66,7 @@ get_header(); ?>
             <a href="<?php echo get_the_permalink(); ?>" class="article--item__link"></a>
           </div>
         </article>
-      <?php endwhile; endif; ?>
+      <?php endwhile; wp_reset_postdata(); endif; ?>
       </div>
     </section>
   </article>

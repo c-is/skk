@@ -32,7 +32,7 @@
 	    $url = wp_get_attachment_url( $pdf );
 	    ?>
           <li><a href="<?php echo $url; ?>" target="_blank"><?php the_title(); ?><i class="icon icon--pdf"></i><span class="article--report__size"><?php echo $filesize; ?></span></a></li>
-    	<?php endwhile; endif; ?>
+    	<?php endwhile; wp_reset_postdata(); endif; ?>
         </ul>
       </article>
 
