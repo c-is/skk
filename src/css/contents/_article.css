@@ -307,6 +307,7 @@
 }
 
 .article-tag {
+	background-color: #888;
 	&--news {
 		background-color: $news-colour;
 	}

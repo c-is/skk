@@ -16,7 +16,8 @@ get_header(); ?>
     $q = new WP_Query(
       array(
       	'post_type' => 'post',
-        'posts_per_page' => -1
+        'posts_per_page' => -1,
+        'post__not_in' => get_option( 'sticky_posts'),
       )
     );
     ?>
@@ -43,7 +44,7 @@ get_header(); ?>
             $cate_args = array(
             'hide_empty'=> 1,
             'orderby' => 'name',
-            'order' => 'ASC'
+            'order' => 'ASC',
             );
 
             $categories = get_categories($cate_args);
@@ -63,15 +64,21 @@ get_header(); ?>
 
       $post_categories = get_the_category();
       $post_date = get_the_date( 'Y' );
+      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
       ?>
         <article class="article article--item category-<?php echo $post_categories[0]->slug; ?> year-<?php echo $post_date; ?>">
           <div class="article--item__image">
-            <img src="">
+            <?php if ($thumb) {
+              # code...
+              echo '<img src="'. $thumb['0'] .'" alt="'. get_the_title($post->ID) .'">';
+            } else {
+              echo '<img src="" alt="NO IMAGE">';
+            } ?>
             <span class="article--item__tag article-tag article-tag--<?php echo $post_categories[0]->slug ?>"><?php echo $post_categories[0]->name ?></span>
           </div>
           <div class="article--item__text">
             <p class="article--item__title"><?php the_title(); ?></p>
-            <p class="article--item__desc"><?php the_content(); ?></p>
+            <p class="article--item__desc"><?php echo mb_substr(get_the_excerpt(), 0, 100); ?></p>
             <a href="<?php echo get_the_permalink(); ?>" class="article--item__link"></a>
           </div>
         </article>
