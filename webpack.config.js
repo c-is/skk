@@ -31,6 +31,8 @@ module.exports = {
         modulesDirectories: ['node_modules'],
         extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.json'],
         alias: { 
+            'masonry': 'masonry-layout',
+            'isotope': 'isotope-layout',
             'jquery': `${__dirname}/node_modules/jquery/dist/jquery`,
         } 
     },

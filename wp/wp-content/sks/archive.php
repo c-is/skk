@@ -21,16 +21,24 @@ get_header(); ?>
     );
     ?>
       <div class="article-nav">
-        <div class="article-nav__filter">
-          <ul>
-            <li><span class="active">2017</span></li>
-            <li><span>2016</span></li>
-            <li><span>2015</span></li>
+        <div class="article-nav__filter js-filter">
+          <ul class="clear">
+            <li><span class="js-filter-trigger active" data-filter="*">ALL</span></li>
+            <?php 
+            $years = $wpdb->get_results( "SELECT YEAR(post_date) AS year FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' GROUP BY year DESC" );
+
+            foreach ( $years as $year ) {
+              $posts_this_year = $wpdb->get_results( "SELECT post_title FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' AND YEAR(post_date) = '" . $year->year . "'" );
+
+              echo '<li><span class="js-filter-trigger" data-filter=".year-'. $year->year .'">'. $year->year .'</span></li>';
+               
+            };
+            ?>
           </ul>
         </div>
-        <form class="article-nav__category">
-          <select>
-            <option>カテゴリーを選択</option>
+        <form class="article-nav__category js-filter">
+          <select class="js-filter-select">
+            <option value="*">カテゴリーを選択</option>
             <?php 
             $cate_args = array(
             'hide_empty'=> 1,
@@ -40,7 +48,7 @@ get_header(); ?>
 
             $categories = get_categories($cate_args);
             foreach($categories as $category) {
-              echo '<option id="option-'. $category->slug .'">'. $category->name .'</option>';
+              echo '<option value=".category-'. $category->slug .'">'. $category->name .'</option>';
             };
             ?>
           </select>
@@ -54,8 +62,9 @@ get_header(); ?>
       $slug = $post->slug;
 
       $post_categories = get_the_category();
+      $post_date = get_the_date( 'Y' );
       ?>
-        <article class="article article--item">
+        <article class="article article--item category-<?php echo $post_categories[0]->slug; ?> year-<?php echo $post_date; ?>">
           <div class="article--item__image">
             <img src="">
             <span class="article--item__tag article-tag article-tag--<?php echo $post_categories[0]->slug ?>"><?php echo $post_categories[0]->name ?></span>

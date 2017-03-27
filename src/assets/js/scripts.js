@@ -2,6 +2,7 @@ import $ from 'jquery';
 import { decodeHtmlEntity, mobilecheck, getOrientation, getUrlVars, readCookie } from './app/globals';
 import {TweenMax} from "gsap";
 import classie from 'classie';
+import Isotope from 'isotope-layout';
 
 $(() => {
 
@@ -14,6 +15,7 @@ $(() => {
 	getCircleSize();
 	search();
 	tabs();
+	filterItems();
 });
 $(window).on('scroll', () => {
 	fixHeader();
@@ -78,5 +80,32 @@ function tabs() {
 		let tar = event.currentTarget.getAttribute('data-tab');
 		$('.js-tab, .js-tab-content').removeClass('active');
 		$(event.currentTarget).add(tar).addClass('active');
+	});
+}
+
+function filterItems() {
+	let archive = document.querySelector('.article-list--archives');
+	let iso = new Isotope( '.article-list--archives', {
+		itemSelector: '.article--item',
+		layoutMode: 'fitRows'
+	})
+	$('.js-filter').on( 'click', '.js-filter-trigger', (event) => {
+		event.preventDefault();
+		$('.js-filter-trigger').removeClass('active');
+		$(event.currentTarget).addClass('active');
+
+		let filterValue = $(event.currentTarget).attr('data-filter');
+		iso.arrange({
+			// item element provided as argument
+			filter: filterValue,
+		});
+	});
+	$('.js-filter').on( 'change', '.js-filter-select', (event) => {
+		event.preventDefault();
+		let filterValue = $(event.currentTarget).val();
+		iso.arrange({
+			// item element provided as argument
+			filter: filterValue,
+		});
 	});
 }

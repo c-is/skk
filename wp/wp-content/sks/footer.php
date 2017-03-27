@@ -20,8 +20,7 @@
 				<div class="footer-sns">
 					<span>follow us on</span>
 					<ul class="clear">
-						<li><a href=""><i class="icon icon--facebook"></i></a></li>
-						<li><a href=""><i class="icon icon--twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/%E5%85%A8%E5%9B%BD%E7%A4%BE%E4%BC%9A%E7%A6%8F%E7%A5%89%E6%B3%95%E4%BA%BA%E7%B5%8C%E5%96%B6%E9%9D%92%E5%B9%B4%E4%BC%9A-730107047039108/" target="_blank"><i class="icon icon--facebook"></i></a></li>
 					</ul>
 				</div>
 				<p class="copyright">© <?php echo date('Y'); ?> 全国社会福祉法人経営青年会 All rights reserved.</p>

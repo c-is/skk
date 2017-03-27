@@ -132,9 +132,11 @@ ol {
 
 .u-left {
 	float: left;
+	margin-right: 1rem;
 }
 .u-right {
 	float: right;
+	margin-left: 1rem;
 }
 .u-inner {
 	max-width: $maxWidth;

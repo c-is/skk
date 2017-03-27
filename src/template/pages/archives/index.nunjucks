@@ -14,21 +14,25 @@
     </header>
     <section class="section section--articles">
       <div class="article-nav">
-        <div class="article-nav__filter">
+        <div class="article-nav__filter js-filter">
           <ul>
-            <li><span class="active">2017</span></li>
-            <li><span>2016</span></li>
-            <li><span>2015</span></li>
+            <li><span class="js-filter-trigger active" data-filter="*">ALL</span></li>
+            <li><span class="js-filter-trigger" data-filter=".year-2017">2017</span></li>
+            <li><span class="js-filter-trigger" data-filter=".year-2016">2016</span></li>
+            <li><span class="js-filter-trigger" data-filter=".year-2015">2015</span></li>
           </ul>
         </div>
-        <form class="article-nav__category">
-          <select>
-            <option>カテゴリーを選択</option>
+        <form class="article-nav__category js-filter">
+          <select class="js-filter-select">
+            <option value="*">カテゴリーを選択</option>
+            <option value=".category-news">news</option>
+            <option value=".category-report">report</option>
+            <option value=".category-workshop">workshop</option>
           </select>
         </form>
       </div>
-      <div class="article-list article-list--archives">
-        <article class="article article--item">
+      <div class="article-list article-list--archives clear">
+        <article class="article article--item year-2017 category-news">
           <div class="article--item__image">
             <img src="">
             <span class="article--item__tag article-tag article-tag--news">最新ニュース</span>
@@ -39,7 +43,7 @@
             <a href="" class="article--item__link"></a>
           </div>
         </article>
-        <article class="article article--item">
+        <article class="article article--item year-2016 category-workshop">
           <div class="article--item__image">
             <img src="">
             <span class="article--item__tag article-tag article-tag--workshop">研修会</span>
@@ -50,7 +54,7 @@
             <a href="" class="article--item__link"></a>
           </div>
         </article>
-        <article class="article article--item">
+        <article class="article article--item year-2017 category-report">
           <div class="article--item__image">
             <img src="">
             <span class="article--item__tag article-tag article-tag--report">活動レポート</span>
@@ -61,7 +65,7 @@
             <a href="" class="article--item__link"></a>
           </div>
         </article>
-        <article class="article article--item">
+        <article class="article article--item year-2015 category-sks-news">
           <div class="article--item__image">
             <img src="">
             <span class="article--item__tag article-tag article-tag--sks-news">青年会ニュース</span>
