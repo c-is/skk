@@ -1,0 +1,4 @@
+AuthName "Authorized personnel only."
+AuthType Basic
+Require valid-user
+AuthUserFile "/home/yugo89/.htpasswds/public_html/skk/passwd"

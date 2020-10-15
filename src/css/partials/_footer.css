@@ -19,6 +19,9 @@
 		font-family: $sub-font;
 		font-weight: 400;
 		line-height: 1;
+		img {
+			width: 25rem;
+		}
 	}
 	&-menu {
 		li {

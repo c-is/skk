@@ -28,13 +28,21 @@ function navigationMenu() {
 		overlay;
 
 	let resetMenu = (callback) => {
-		TweenLite.to(nav, 0.4, { x: '100%', onComplete: () =>{
-			classie.remove(trigger, 'active');
-			classie.remove(nav, 'navigation--show');
-			overlay.removeEventListener(eventtype, resetMenu);
-			document.body.removeChild(overlay);
-			//if (callback) callback();
-		}});
+		if(mobilecheck()) {
+			TweenLite.to(nav, 0.4, { autoAlpha: 0, width: '0%', onComplete: () =>{
+				classie.remove(trigger, 'active');
+				classie.remove(nav, 'navigation--show');
+				overlay.removeEventListener(eventtype, resetMenu);
+				document.body.removeChild(overlay);
+			}});
+		} else {
+			TweenLite.to(nav, 0.4, { x: '100%', onComplete: () =>{
+				classie.remove(trigger, 'active');
+				classie.remove(nav, 'navigation--show');
+				overlay.removeEventListener(eventtype, resetMenu);
+				document.body.removeChild(overlay);
+			}});
+		}
 	};
 
 	let closeClickFn = () => {
@@ -54,7 +62,11 @@ function navigationMenu() {
 
 			classie.add(trigger, 'active');
 			classie.add(nav, 'navigation--show');
-			TweenLite.to(nav, 0.4, { x: '0%' });
+			if(mobilecheck()) {
+				TweenLite.to(nav, 0.4, { autoAlpha: 1, width: '100%' });
+			} else {
+				TweenLite.to(nav, 0.4, { x: '0%' });
+			}
 		}
 	});
 }

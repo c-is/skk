@@ -9,12 +9,12 @@
     <section class="section section--main js-get-height">
       <span class="circle circle--big js-circle"></span>
       <div class="main-title-container">
-        <h1 class="main-title">経営青年会</h1>
+        <h1 class="main-title"><img src="/assets/images/common/logo_blue.svg" alt="経営青年会"></h1>
         <p class="main-subtitle">社会福祉法人経営青年会は、全国経営協の内部組織として、次代を担う50歳未満の若手法人経営者等の研鑽、リーダーとしての資質向上を目的に、平成7年12月11日に発足いたしました。</p>
       </div>
       <article class="main-article">
         <div class="main-article__image">
-          <img src="/assets/images/articles/image1.jpg" alt="IMAGE">
+          <div id="player"></div>
           <a href="/article" class="main-article__link"></a>
         </div>
         <p class="main-article__title">タイトルタイトル</p>
@@ -122,6 +122,13 @@
       </div>
     </section>
   </article>
+  <section class="section section--membership-home">
+    <div class="inner">
+      <h2>入会案内</h2>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <a class="button button--link" href="/membership">詳細はこちら</a>
+    </div>
+  </section>
   <section class="section section--anniversary js-get-height">
     <div class="anniversary-inner">      
       <p class="anniversary-title">20 years anniversary</p>
@@ -130,7 +137,7 @@
         <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが</p>
       </div>
       <div class="anniversary-image">
-        <img src="/assets/images/examples/example-anniversary.jpg" alt="EXAMPLE">
+        <img src="/assets/images/examples/example-anniversary.png" alt="EXAMPLE">
       </div>
       <a href="" class="anniversary-link button button--download"><i class="icon icon--download"></i>Download</a>
     </div>

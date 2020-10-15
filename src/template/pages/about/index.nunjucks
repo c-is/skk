@@ -19,11 +19,11 @@
           <p class="about-section__desc">あいさつ</p>
         </div>
         <div class="about-section-desc">
-          <img class="u-left" src="/assets/images/about/image-greetings2.jpg" alt="廣江　晃">
+          <img class="u-left" style="width: 12.5rem;" src="/assets/images/about/image-greetings2.jpg" alt="塘林　敬規">
           <p>平成25年度より、会の名称が全国青年経営者会から全国社会福祉法人経営青年会に変わりました。本会は、次代を担う若者が社会福祉法人の経営を真剣に考え、研鑽していくことをめざしています。</p>
           <p>いま、世の中において、社会福祉法人の非営利組織としての公共性が問われています。この状況に対して我々は、法人の経営情報公開を行い、地域の方と手を携えながら地域に必要な事業を推進し、かつ社会福祉の普遍的な価値観のもと主張すべきことはしっかりと主張していかなければなりません。そして、真に地域になくてはならない法人として、組織の中核を担う我々の世代が汗をかき、成長していくことが強く望まれています。本会は、その目的に達すべく、さまざまな研修を行っています。</p>
           <p>本年度は、「Smile」「Speed」「Spirit」の３Sをスローガンに掲げて活動をしています。笑顔あふれる地域のため、社会福祉に対する熱い志を持った多くの皆さまのご参画を心よりお待ちしています。</p>
-          <p class="u-text-right greetings-signature">廣江　晃</p>
+          <p class="u-text-right greetings-signature">塘林　敬規</p>
         </div>
       </div>
     </section>
@@ -125,7 +125,7 @@
           <h2 class="about-section__title">Member</h2>
           <p class="about-section__desc">組織紹介</p>
           <figure>
-            <img src="/assets/images/about/image-member.jpg" alt="IMAGE">
+            <img class=".js-enlarge-image" src="/assets/images/about/image-member.png" alt="IMAGE">
             <figcaption>全国社会福祉法人経営青年会　組織図</figcaption>
           </figure>
         </div>
@@ -135,8 +135,8 @@
               <span class="member-area__title">会長</span>
               <ul>
                 <li>
-                  <span class="member-area__head">廣江　晃</span>
-                  <span class="member-area__desc">鳥取県／こうほうえん</span>
+                  <span class="member-area__head">塘林　敬規</span>
+                  <span class="member-area__desc">熊本県／肥後自活団</span>
                 </li>
               </ul>  
             </div>
@@ -144,56 +144,56 @@
               <span class="member-area__title">副会長</span>
               <ul>
                 <li>
-                  <span class="member-area__head">大代　貴輝</span>
-                  <span class="member-area__desc">北海道／黒松内つくし園</span>
+                  <span class="member-area__head">菊池　月香</span>
+                  <span class="member-area__desc">栃木県／同愛会</span>
                 </li>
-                <li>
-                  <span class="member-area__head">菊池　俊則</span>
-                  <span class="member-area__desc">岩手県／若竹会</span>
-                </li>
-                <li>
-                  <span class="member-area__head">村井　慶二</span>
-                  <span class="member-area__desc">大阪府／ふじ福祉会</span>
-                </li>
-                <li>
-                  <span class="member-area__head">塘林　敬規</span>
-                  <span class="member-area__desc">熊本県／肥後自活団</span>
-                </li>
-              </ul>  
-            </div>
-            <div class="member-area">
-              <span class="member-area__title">総務広報部会長</span>
-              <ul>
-                <li>
-                  <span class="member-area__head">大森　秀之</span>
-                  <span class="member-area__desc">大阪府／治栄会</span>
-                </li>
-              </ul>  
-            </div>
-            <div class="member-area">
-              <span class="member-area__title">研修企画部会長</span>
-              <ul>
                 <li>
                   <span class="member-area__head">杉山　弘年</span>
                   <span class="member-area__desc">静岡県／蒼樹会</span>
                 </li>
-              </ul>  
-            </div>
-            <div class="member-area">
-              <span class="member-area__title">社会福祉法人経営検討委員会</span>
-              <ul>
                 <li>
-                  <span class="member-area__head">神田　　 学</span>
-                  <span class="member-area__desc">（再掲）</span>
+                  <span class="member-area__head">梅野　高明</span>
+                  <span class="member-area__desc">兵庫県／勝原福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">神田　　学</span>
+                  <span class="member-area__desc">富山県／梨雲福祉会</span>
                 </li>
               </ul>  
             </div>
             <div class="member-area">
-              <span class="member-area__title">地域活動実践委員会</span>
+              <span class="member-area__title">総務広報委員会委員長</span>
               <ul>
                 <li>
-                  <span class="member-area__head">梅野　高明</span>
-                  <span class="member-area__desc">（再掲）</span>
+                  <span class="member-area__head">村木　宏成</span>
+                  <span class="member-area__desc">秋田県／愛生会</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">研修企画委員会委員長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">古田　周作</span>
+                  <span class="member-area__desc">愛知県／福寿園</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">社会福祉法人経営検討委員会委員長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">遠部　敦也</span>
+                  <span class="member-area__desc">広島県／聖恵会</span>
+                </li>
+              </ul>  
+            </div>
+            <div class="member-area">
+              <span class="member-area__title">地域活動実践委員会委員長</span>
+              <ul>
+                <li>
+                  <span class="member-area__head">山内　義宜</span>
+                  <span class="member-area__desc">鹿児島県／輪光福祉会</span>
                 </li>
               </ul>  
             </div>
@@ -204,43 +204,43 @@
               <ul>
                 <li>
                   <span class="member-area__head">村木　宏成</span>
-                  <span class="member-area__desc">秋田県／愛生会</span>
-                </li>
-                <li>
-                  <span class="member-area__head">杉山　弘年</span>
                   <span class="member-area__desc">（再掲）</span>
                 </li>
                 <li>
-                  <span class="member-area__head">菊地　月香</span>
-                  <span class="member-area__desc">栃木県／同愛会</span>
+                  <span class="member-area__head">木村　敦至</span>
+                  <span class="member-area__desc">茨城県／愛の会</span>
                 </li>
                 <li>
-                  <span class="member-area__head">神田　　学</span>
-                  <span class="member-area__desc">富山県／梨雲福祉会</span>
+                  <span class="member-area__head">島田　幸治</span>
+                  <span class="member-area__desc">群馬県／植竹会</span>
                 </li>
                 <li>
-                  <span class="member-area__head">梅野　高明</span>
-                  <span class="member-area__desc">兵庫県／勝原福祉会</span>
+                  <span class="member-area__head">古田　周作</span>
+                  <span class="member-area__desc">（再掲）</span>
                 </li>
                 <li>
-                  <span class="member-area__head">堤　　 洋三</span>
-                  <span class="member-area__desc">滋賀県／六心会</span>
+                  <span class="member-area__head">細川　景子</span>
+                  <span class="member-area__desc">京都府／利生会</span>
                 </li>
                 <li>
-                  <span class="member-area__head">手束　直胤</span>
-                  <span class="member-area__desc">徳島県／有誠福祉会</span>
+                  <span class="member-area__head">小林　弘典</span>
+                  <span class="member-area__desc">和歌山県／博愛会</span>
                 </li>
                 <li>
-                  <span class="member-area__head">田川　伸隆</span>
-                  <span class="member-area__desc">長崎県／高来福祉会</span>
+                  <span class="member-area__head">遠部　敦也</span>
+                  <span class="member-area__desc">（再掲）</span>
                 </li>
                 <li>
-                  <span class="member-area__head">大﨑　雅子</span>
-                  <span class="member-area__desc">富山県／海望福祉会</span>
+                  <span class="member-area__head">山内　義宜</span>
+                  <span class="member-area__desc">鹿児島県／輪光福祉会</span>
                 </li>
                 <li>
                   <span class="member-area__head">大森　秀之</span>
-                  <span class="member-area__desc">（再掲）</span>
+                  <span class="member-area__desc">大阪府／治栄会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">保岡　伸聡</span>
+                  <span class="member-area__desc">徳島県／あさがお福祉会</span>
                 </li>
               </ul>  
             </div>
@@ -248,21 +248,12 @@
               <span class="member-area__title">監事</span>
               <ul>
                 <li>
-                  <span class="member-area__head">-</span>
-                  <span class="member-area__desc">（東海・北陸ブロックより選出）</span>
+                  <span class="member-area__head">石川　雅昭</span>
+                  <span class="member-area__desc">東京都／聖光会</span>
                 </li>
                 <li>
-                  <span class="member-area__head">-</span>
-                  <span class="member-area__desc">（九州ブロックより選出）</span>
-                </li>
-              </ul>  
-            </div>
-            <div class="member-area">
-              <span class="member-area__title">顧問</span>
-              <ul>
-                <li>
-                  <span class="member-area__head">-</span>
-                  <span class="member-area__desc">（調整中）</span>
+                  <span class="member-area__head">辻村　泰聡</span>
+                  <span class="member-area__desc">奈良県／宝山寺福祉事業団</span>
                 </li>
               </ul>  
             </div>
@@ -270,8 +261,12 @@
               <span class="member-area__title">相談役</span>
               <ul>
                 <li>
-                  <span class="member-area__head">-</span>
-                  <span class="member-area__desc">（調整中）</span>
+                  <span class="member-area__head">櫛田　匠</span>
+                  <span class="member-area__desc">京都府／みねやま福祉会</span>
+                </li>
+                <li>
+                  <span class="member-area__head">川西　基雄</span>
+                  <span class="member-area__desc">香川県／サンシャイン会</span>
                 </li>
               </ul>  
             </div>

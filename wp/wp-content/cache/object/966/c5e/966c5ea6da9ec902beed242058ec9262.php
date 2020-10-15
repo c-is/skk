@@ -1,0 +1,1 @@
+gﬁX<?php exit; ?>a:1:{s:7:"content";a:2:{s:9:"timestamp";i:1490927174;s:14:"upgrade_notice";a:2:{s:7:"version";s:5:"1.2.0";s:7:"message";s:0:"";}}}

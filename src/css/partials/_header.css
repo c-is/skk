@@ -4,7 +4,7 @@
 	height: 5.333rem;
 	padding: 0.2rem 13.667rem;
 	overflow: hidden;
-	z-index: 6;
+	z-index: 999;
 	&-inner {
 		display: flex;
 		max-width: $maxWidth;

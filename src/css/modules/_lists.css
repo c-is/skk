@@ -1,0 +1,21 @@
+.table {
+	&--membership-list {
+		width: 100%;
+		margin-bottom: 4rem;
+		font-size: 1.125rem;
+		border: 1px solid #ccc;
+		caption {
+			margin-bottom: 1em;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		th, td {
+			padding: 1rem;
+			border-bottom: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+		th {
+			background-color: $bgColour;
+		}
+	}
+}

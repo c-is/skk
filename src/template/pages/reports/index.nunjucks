@@ -16,27 +16,27 @@
       <article class="article article--report">
         <h5 class="article--report__head">平成25・26年度</h5>
         <ul>
-          <li><a href="">次なる災害に備える事業継続マネジメント実践の手引き<i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></a></li>
-          <li><a href="">生活困窮者支援に係る現状報告書<i class="icon icon--pdf"></i><span class="article--report__size">2.3MB</span></a></li>
+          <li><a href="">次なる災害に備える事業継続マネジメント実践の手引き<span class="pdf-element"><i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></span></a></li>
+          <li><a href="">生活困窮者支援に係る現状報告書<span class="pdf-element"><i class="icon icon--pdf"></i><span class="article--report__size">2.3MB</span></span></a></li>
         </ul>
       </article>
       <article class="article article--report">
         <h5 class="article--report__head">平成23年度</h5>
         <ul>
-          <li><a href="">介護保険事業経営に関する勉強会<i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></a></li>
-          <li><a href="">障害者施設経営に関する勉強会<i class="icon icon--pdf"></i><span class="article--report__size">2.3MB</span></a></li>
+          <li><a href="">介護保険事業経営に関する勉強会<span class="pdf-element"><i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></span></a></li>
+          <li><a href="">障害者施設経営に関する勉強会<span class="pdf-element"><i class="icon icon--pdf"></i><span class="article--report__size">2.3MB</span></span></a></li>
         </ul>
       </article>
       <article class="article article--report">
         <h5 class="article--report__head">平成22年度</h5>
         <ul>
-          <li><a href="">課題別検討会 報告書（全文）<i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></a></li>
+          <li><a href="">課題別検討会 報告書（全文） class="pdf-element"<span><i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></span></a></li>
         </ul>
       </article>
       <article class="article article--report">
         <h5 class="article--report__head">平成21年度</h5>
         <ul>
-          <li><a href="">課題別検討会 報告書（全文）<i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></a></li>
+          <li><a href="">課題別検討会 報告書（全文） class="pdf-element"<span><i class="icon icon--pdf"></i><span class="article--report__size">8.8MB</span></span></a></li>
         </ul>
       </article>
     </section>

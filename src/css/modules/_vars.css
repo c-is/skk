@@ -1,7 +1,4 @@
-/*$main-font: 'Crimson Text', serif;
-$main-font: "Times New Roman MT Std-Cond", serif;
-$main-font: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif !default;*/
-$main-font: "futura-pt", "Lato", "HelveticaNeueRoman", "HelveticaNeue-Roman", 'Hiragino Kaku Gothic ProN', 'Kozuka Gothic Pr6N', Arial, "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+$main-font: "futura-pt", "Lato", "HelveticaNeueRoman", "HelveticaNeue-Roman", 'YuGothic', 'Hiragino Kaku Gothic ProN', 'Kozuka Gothic Pr6N', Arial, "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 $sub-font: "baskerville", "A-OTF Ryumin Pro", serif;
 
 $main-colour: #000;
@@ -12,6 +9,7 @@ $news-colour: #ff6179;
 $report-colour: #f9976d;
 $workshop-colour: #20d6ef;
 $sks-news-colour: #41d382;
+$interview-colour: #DA97F0;
 
 $bgColour: #B5D3CC;
 

@@ -5,8 +5,8 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: responsive 9.74999999988px 18px;
-	font-range: 1040px 1920px;
+	font-size: responsive 9.74999999988px 13.5px;
+	font-range: 1040px 1440px;
 }
 body {
 	font-size: 100%;
@@ -130,6 +130,12 @@ ol {
 	}
 }
 
+.u-sp {
+	display: none !important;
+}
+.u-pc {
+	display: inherit !important;
+}
 .u-left {
 	float: left;
 	margin-right: 1rem;
@@ -210,6 +216,9 @@ ol {
 .u-mt64 {
 	margin-top: 64px !important;
 }
+.u-mb8 {
+	margin-bottom: 8px !important;	
+}
 .u-mb32 {
 	margin-bottom: 32px !important;
 }
@@ -234,6 +243,9 @@ ol {
 	}
 	&--sks-news {
 		color: $sks-news-colour;
+	}
+	&--interview {
+		color: $interview-colour;
 	}
 }
 

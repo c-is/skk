@@ -1,0 +1,41 @@
+.business-content__inner img {
+  width: 100%;
+}
+
+.about-section-desc--first img {
+  width: 16.66667rem;
+}
+
+.about-section-desc--second img {
+  width: 16.66667rem;
+	box-shadow: 0.2rem 0.2rem 0.5rem #888;
+}
+
+.about-section-desc--third img {
+  width: 8rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #888;
+}
+
+.about-section-desc--third figcaption {
+  margin-top: 1rem;
+}
+
+.about-section-desc--third figure {
+  display: flex;
+  width: 22rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-section-desc--fourth {
+  float: none !important;
+}
+
+.figure__box {
+  width: 48%;
+}
+
+.business-content__inner {
+	overflow: inherit;
+}
+

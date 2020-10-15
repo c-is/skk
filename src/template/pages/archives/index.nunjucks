@@ -14,7 +14,7 @@
     </header>
     <section class="section section--articles">
       <div class="article-nav">
-        <div class="article-nav__filter js-filter" data-filter-group="year">
+        <div class="article-nav__filter js-filter u-pc" data-filter-group="year">
           <ul>
             <li><span class="js-filter-trigger active" data-filter="">ALL</span></li>
             <li><span class="js-filter-trigger" data-filter=".year-2017">2017</span></li>
@@ -22,6 +22,14 @@
             <li><span class="js-filter-trigger" data-filter=".year-2015">2015</span></li>
           </ul>
         </div>
+        <form class="article-nav__filter js-filter u-sp" data-filter-group="year">
+          <select class="js-filter-select">
+            <option value="">年を選択</option>
+            <option value=".year-2017">2017</option>
+            <option value=".year-2016">2016</option>
+            <option value=".year-2015">2015</option>
+          </select>
+        </form>
         <form class="article-nav__category js-filter" data-filter-group="category">
           <select class="js-filter-select">
             <option value="">カテゴリーを選択</option>

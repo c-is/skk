@@ -8,17 +8,24 @@ $(() => {
 
 	'use strict';
 
-	// let view = new HomeView();
-	// view.render();
-
 	getHeight();
 	getCircleSize();
 	search();
 	tabs();
-	filterItems();
+	backToTop();
+
+	new ClickableImage();
+
+	if (document.querySelector('.article-list--archives')) filterItems();
+
+	let slug = window.location.pathname.replace(/\//g, '');
+
+	if (slug === '') youtubeFn();
 });
+
 $(window).on('scroll', () => {
 	fixHeader();
+	backToTopAppering();
 });
 
 function getHeight() {
@@ -41,6 +48,23 @@ function fixHeader() {
 		classie.remove(header, 'fixed');
 	}
 }
+function backToTopAppering() {
+	let scrollVal = $(window).scrollTop();
+	let windowHeight = window.innerHeight;
+
+	if(scrollVal > windowHeight) {
+		TweenMax.to('.js-backtotop', 0.4, { autoAlpha: 1 });
+	} else {
+		TweenMax.to('.js-backtotop', 0.4, { autoAlpha: 0 });
+	}
+}
+function backToTop() {
+	$(document).on('click', '.js-backtotop', (event) => {
+		event.preventDefault();
+		$('body, html').animate({ scrollTop: 0 });
+	});
+}
+
 function search() {
 	let active = false;
 	let $icon;
@@ -138,5 +162,82 @@ function filterItems() {
 			value += obj[ prop ];
 		}
 		return value;
+	}
+}
+
+function youtubeFn() {
+	let player = new YT.Player('video-player', {
+		height: '390',
+		width: '640',
+		videoId: '5X8GuwTRqVA',
+		playerVars: {
+			color: '#000',
+			playsinline: 1,
+			modestbranding: 1,
+			autohide: 1,
+			controls: 0,
+			showinfo: 0,
+			rel: 0,
+			loop: 0
+		},
+		events: {
+			onReady: onPlayerReady,
+			//onStateChange: onPlayerStateChange
+		},
+	});
+
+	function onPlayerReady(event) {
+	  player.setPlaybackQuality('hd720');
+	  // event.target.mute();
+	  event.target.unMute();
+	  event.target.playVideo();
+	}
+
+	var done = false;
+	function onPlayerStateChange(event) {
+	  if (event.data == YT.PlayerState.PLAYING && !done) {
+	    setTimeout(stopVideo, 6000);
+	    done = true;
+	  }
+	}
+	function stopVideo() {
+	  player.stopVideo();
+	}
+}
+
+class ClickableImage {
+	constructor(options) {
+		this.events();
+	}
+	events() {
+		$(document).on('click', '.js-enlarge-image', (event) => {
+			this.enlargeImage(event);
+
+			return false;
+		});
+	}
+	closeImage = () => {
+		console.log('closed');
+		TweenMax.to(this.el, 0.4, { autoAlpha: 0, onComplete: () => {
+			this.el.removeEventListener('click', this.closeImage);
+			document.body.removeChild(this.el);
+		}});
+	};
+	enlargeImage = (event) => {
+		let src = event.currentTarget.getAttribute('src');
+		let img = document.createElement('img');
+
+		this.el = document.createElement('div');
+		img.setAttribute('src', src);
+		this.el.className = 'enlarge-image';
+
+		this.el.appendChild(img);
+		document.body.appendChild(this.el);
+
+		console.log('enlarged');
+
+		TweenMax.to(this.el, 0.4, { autoAlpha: 1 });
+
+		this.el.addEventListener('click', this.closeImage);
 	}
 }
